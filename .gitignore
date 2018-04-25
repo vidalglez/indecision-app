@@ -1,0 +1,5 @@
+#node modules loaded
+node_modules/
+
+#JS file compiled by babel
+public/scripts/app.js
