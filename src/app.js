@@ -31,11 +31,12 @@ const renderTemplate = () => {
       <h3>{app.title}</h3>
       {app.subtitle && <p>{app.subtitle}</p>}
       <p>{app.options.length > 0 ? 'Here are your options' : 'No options'}</p>
-      <p>{app.options.length}</p>
-      <button onClick={onRemoveAll}>Remove All</button>
+      <p>{app.options.length}</p>      
+      <button onClick={onRemoveAll}>Remove All</button>     
       <ol>
-        <ul>Item one</ul>
-        <ul>Item two</ul>
+        {
+          app.options.map((option) => <li key={option}>{option}</li>  )        
+        }        
       </ol>      
       <form onSubmit={onFormSubmit}>
         <input type="text" name="option" />
