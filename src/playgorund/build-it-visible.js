@@ -1,12 +1,7 @@
 let visible = false;
 
 const onShowDetails = () => {
-    if(visible){
-        visible = false;
-    }
-    else {
-        visible = true;
-    }
+    visible = !visible;
   renderPage();
 }
 const appId = document.getElementById('app');
@@ -17,7 +12,9 @@ const renderPage = () => {
           { 
             visible && <p>Hey, this text is visible!</p> 
           }
-        <button onClick={onShowDetails}>Show details</button>
+        <button onClick={onShowDetails}>
+          {visible ? 'Hide details' : 'Show details'}
+        </button>
         </div>
     );
   ReactDOM.render(visibilityTemplate, appId);

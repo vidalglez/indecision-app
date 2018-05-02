@@ -1,3 +1,14 @@
-To run locally: live-server public
-To refresh automatically:
+To install yarn globally in your machine after installing node and npm: $ npm install -g yarn
+
+To install live server in your local machine: $ yarn global add live-server
+
+in case of failure execute: npm install -g live-server 
+
+To run locally: $ live-server public
+
+To install babel in you local machine to compile jsx: npm install -g babel-cli@6.24.1 
+
+To create a project from scratch: $ yarn init
+
+To run babel and refresh automatically:
 babel src/playgorund/es6-arrow-function.js --out-file=public/scripts/app.js --presets=env,react --watch
