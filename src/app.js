@@ -1,7 +1,7 @@
 console.log('App.js is running!');
 
 const app = {
-    title: 'Blade Runner',
+    title: 'Indecision App',
     subtitle: 'The emotion continue',
     options: []
 };
