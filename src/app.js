@@ -1,10 +1,10 @@
-class IndecisionApp extends React.Component { 
-  
-  render(){
+class IndecisionApp extends React.Component {
+
+  render() {
     const title = 'Indecision App';
     const subtitle = 'Decide what you want to do today';
     const options = ['Option 1', 'Option 2', 'Option 3'];
-    
+
     return (
       <div>
         <Header title={title} subtitle={subtitle} />
@@ -16,10 +16,10 @@ class IndecisionApp extends React.Component {
   }
 }
 
-class Header extends React.Component{
-  
-  render() {   
-    return (      
+class Header extends React.Component {
+
+  render() {
+    return (
       <div>
         <h1>{this.props.title}</h1>
         <h2>{this.props.subtitle}</h2>
@@ -28,13 +28,13 @@ class Header extends React.Component{
   }
 }
 
-class Action extends React.Component{
-  
+class Action extends React.Component {
+
   handlePick() {
-    
+
   }
-  
-  render(){
+
+  render() {
     return (
       <div>
         <button onClick={this.handlePick}>What should I do?</button>
@@ -47,13 +47,13 @@ class Options extends React.Component {
   onRemoveAll() {
     console.log('onRemoveAll');
   }
-  
+
   render() {
     return (
       <div>
         <button onClick={this.onRemoveAll} >Remove all</button>
         {
-          this.props.options.map((option) =>  <Option key={option} optionText={option} />)
+          this.props.options.map((option) => <Option key={option} optionText={option} />)
         }
         <Option />
       </div>
@@ -62,13 +62,16 @@ class Options extends React.Component {
 }
 
 class AddOption extends React.Component {
-  
-  handleAddOption(e){
+
+  handleAddOption(e) {
     e.preventDefault();
-    alert(e.target.elements.option.value);
+    const option = e.target.elements.option.value;
+    if (option) {
+      alert(e.target.elements.option.value);
+    }
     e.target.elements.option.value = '';
   }
-  
+
   render() {
     return (
       <div>
@@ -81,9 +84,9 @@ class AddOption extends React.Component {
   }
 }
 
-class Option extends React.Component{
-  render(){
-    return(
+class Option extends React.Component {
+  render() {
+    return (
       <div>
         {this.props.optionText}
       </div>
