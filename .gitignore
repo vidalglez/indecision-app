@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 #node modules loaded
 node_modules/
 
 #JS file compiled by babel
 public/scripts/app.js
-=======
 # Logs
 logs
 *.log
@@ -64,4 +62,4 @@ typings/
 # dotenv environment variables file
 .env
 
->>>>>>> d80a576e9ac9d8608e59e1c7075ac556d7252ed3
+package-lock.json
