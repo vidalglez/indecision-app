@@ -12,3 +12,8 @@ To create a project from scratch: $ yarn init
 
 To run babel and refresh automatically:
 babel src/playgorund/es6-arrow-function.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+To remove bable and live server use: $ yarn global remove babel-cli live-server
+if npm was used to install it, run: $ npm uninstall -g babel-cli live-server
+
+To install it live server and babel inside your project: $ yarn add live-server babel-cli@6.24.1
