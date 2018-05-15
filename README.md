@@ -35,3 +35,4 @@ To install babel-core and run it from weback (different from babe-cli whhich all
 
 To install babel loader: yarn add babel-loader@7.1.1
 
+To install webpack dev server: $ yarn add webpack-dev-server@2.5.1
