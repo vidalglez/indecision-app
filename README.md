@@ -26,3 +26,12 @@ To install webpack: $ yarn add webpack@3.1.0
 To run the project: $ yarn run build
 
 To run live server after build: $ yarn run serve
+
+To install a new library: $ yarn add validator@8.0.0
+
+To install react adn react-dom: $ yarn add react@16.0.0 react-dom@16.0.0
+
+To install babel-core and run it from weback (different from babe-cli whhich allows running command line): $ yarn add babel-core@6.25.0
+
+To install babel loader: yarn add babel-loader@7.1.1
+
