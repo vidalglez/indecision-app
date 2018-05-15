@@ -6,15 +6,8 @@ import Options from './Options';
 
 export default class IndecisionApp extends React.Component { 
   
-  constructor(props){
-    super(props);
-    this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
-    this.handlePick = this.handlePick.bind(this);
-    this.handleAddOption = this.handleAddOption.bind(this);
-    this.handleDeleteOption = this.handleDeleteOption.bind(this);
-    this.state = {
-      options: []
-    }
+  state = {
+    options: []
   }
 
   componentDidMount(){
@@ -40,11 +33,11 @@ export default class IndecisionApp extends React.Component {
     console.log('componentWillUnmount!');
   }
 
-  handleDeleteOptions(){
+  handleDeleteOptions = () => {
     this.setState( () => ({ options: []}));
   }
 
-  handleDeleteOption(optionDeleted){
+  handleDeleteOption = (optionDeleted) => {
     //console.log('hdo', optionDeleted);
     
     this.setState( (prevState) => ({
@@ -55,13 +48,13 @@ export default class IndecisionApp extends React.Component {
     
   }
 
-  handlePick(){
+  handlePick = () => {
     const randomNum = Math.floor(Math.random() * this.state.options.length);
     const option = this.state.options[randomNum];
     console.log(option);
   }
   
-  handleAddOption(option){
+  handleAddOption = (option) => {
     if(!option) {
       return 'Introduce an option in text field';
     } else if (this.state.options.indexOf(option) > -1) {
