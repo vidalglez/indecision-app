@@ -5,7 +5,7 @@ export default class AddOption extends React.Component {
 
     state = {
       error: undefined
-    }    
+    }
     
     handleAddOption = (e) => {
       e.preventDefault();

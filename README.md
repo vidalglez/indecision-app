@@ -42,3 +42,6 @@ To install babel-plugin: $ yarn add babel-plugin-transform-class-properties@6.24
 To install third party library react-modal: $ yarn add react-modal@2.2.2
 https://github.com/reactjs/react-modal
 
+To install style loader and css loader: $ yarn add style-loader@0.18.2 css-loader@0.28.4
+
+To install sass-loader and node-sass: $yarn add sass-loader@6.0.6 node-sass@4.5.3
