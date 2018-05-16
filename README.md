@@ -38,3 +38,7 @@ To install babel loader: yarn add babel-loader@7.1.1
 To install webpack dev server: $ yarn add webpack-dev-server@2.5.1
 
 To install babel-plugin: $ yarn add babel-plugin-transform-class-properties@6.24.1
+
+To install third party library react-modal: $ yarn add react-modal@2.2.2
+https://github.com/reactjs/react-modal
+
