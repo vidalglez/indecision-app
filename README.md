@@ -45,3 +45,5 @@ https://github.com/reactjs/react-modal
 To install style loader and css loader: $ yarn add style-loader@0.18.2 css-loader@0.28.4
 
 To install sass-loader and node-sass: $yarn add sass-loader@6.0.6 node-sass@4.5.3
+
+For more information about BEM check http://www.getbem.com
