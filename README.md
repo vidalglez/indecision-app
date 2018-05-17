@@ -47,3 +47,6 @@ To install style loader and css loader: $ yarn add style-loader@0.18.2 css-loade
 To install sass-loader and node-sass: $yarn add sass-loader@6.0.6 node-sass@4.5.3
 
 For more information about BEM check http://www.getbem.com
+
+To add Normalize: $ yarn add normalize.css@7.0.0 
+To review web site follow: http://www.normalize.css
