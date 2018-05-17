@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom';
 const Option = (props) => (
   <div>
     {props.optionText}
-    <button 
-      onClick={ (e) => {
+    <button
+      className="button button--link"
+      onClick={(e) => {
         props.handleDeleteOption(props.optionText);
       }}
     >

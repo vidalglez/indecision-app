@@ -50,3 +50,5 @@ For more information about BEM check http://www.getbem.com
 
 To add Normalize: $ yarn add normalize.css@7.0.0 
 To review web site follow: http://www.normalize.css
+
+To get more information about sass functions look for "sass reference functions" in Google
